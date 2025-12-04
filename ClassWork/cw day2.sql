@@ -1,4 +1,5 @@
-CREATE TABLE `college`.`students` (`Id` INT NOT NULL AUTO_INCREMENT , `Name` VARCHAR(20) NOT NULL , `Age` INT NOT NULL , `Department` VARCHAR(20) NOT NULL , `Grade`
+CREATE TABLE `college`.`studentinfo` (`Id` INT NOT NULL AUTO_INCREMENT , `Name` VARCHAR(20) NOT NULL , `Age` INT NOT NULL ,
+ `Department` VARCHAR(20) NOT NULL , `Grade` INT NOT NULL , PRIMARY KEY (`Id`)) ENGINE = InnoDB;
 
 INSERT into studentinfo
 VALUES ('1','Manuel','23','Computer Science','89'),('2','Bebekha','19','Physics','75'),
