@@ -1,23 +1,11 @@
-SELECT 
-    e.id,
-    e.name,
-    d.department_name
-FROM employees e
-LEFT JOIN departments d
-ON e.id = d.emp_id;
+SELECT id, name, department_name FROM employees
+LEFT JOIN departments
+ON employees.id = departments.emp_id;
 
-SELECT 
-    e.id,
-    e.name,
-    d.department_name
-FROM employees e
-INNER JOIN departments d
-ON e.id = d.emp_id;
+SELECT id, name, department_name FROM employees
+INNER JOIN departments
+ON employees.id = departments.emp_id;
 
-SELECT 
-    e.id,
-    e.name,
-    d.department_name
-FROM employees e
-RIGHT JOIN departments d
-ON e.id = d.emp_id;
+SELECT id, name, department_name FROM employees
+RIGHT JOIN departments
+ON employees.id = departments.emp_id;
